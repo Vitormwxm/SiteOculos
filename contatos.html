@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contatos.css">
+    <title>contatos</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"> 
+                <img src="assets/Ícone-Óculos-PNG.png" alt="logo">
+            </h1>
+    
+            <div class="menu-burguer" onclick="menuShow()">
+                 <i class="fa fa-bars fa-2x"></i>
+            </div>
+        </div>
+
+         <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#" class="button-contatos">contatos</a></li>
+         </ul>
+     
+        
+    </header>
+
+    <main>
+        <form action="">
+            <label for="nomesobrenome">nome sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" placeholder="nome">
+
+            <label for="email">email</label>
+            <input type="text" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required> 
+
+            <label for="telefone">telefone</label>
+            <input type="text" id="telefone" class="input-padrao" placeholder="(xx) xxxx-xxxx" required>
+
+            <label for="mensagem">mensagem</label>
+            <textarea name="contatos" id="mensagem" cols="100" rows="10" class="input-padrao" placeholder="digite um texto aqui" required></textarea>
+
+
+            <div >
+                <p> como você prefere o nosso contato?</p>
+
+                <label for="whatsapp"><input type="radio" name="contatos" id="whatsapp"  >whatsapp</label>
+                
+
+                <label for="radio"><input type="radio" name="contatos" id="radio-email">email</label>
+                
+
+                <label for="ligacao"><input type="radio" name="contatos" id="ligacao">ligação</label>
+                
+                
+                
+            </div>
+
+            
+
+            <label for="checkbox"><input id="checkbox" type="checkbox">Gostaria de Receber novidades por Email? 
+            </label>
+
+            <div class="atendimento">
+                <p >Qual Horário Prefere ser Atendido?</p>
+
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+
+            </div>
+
+            <input id="button" type="submit" name="enviar formulário"  value="enviar formulário"id="">
+            
+        </form>
+    </main>
+
+    <footer> 
+    
+        <img src="assets/Ícone-Óculos-PNG.png" alt="">
+      
+      
+        <p> &copy; by copyright - Vendas- Óculos 2022</p>
+    </footer>
+
+    <script src="produtos.js"></script>
+</body>
+</html>
